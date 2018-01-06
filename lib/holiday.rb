@@ -92,6 +92,5 @@ def all_holidays_with_bbq(holiday_hash)
         holiday.values.flatten.include?("BBQ")
         binding.pry
       end
-      return x.keys
     end
 end
