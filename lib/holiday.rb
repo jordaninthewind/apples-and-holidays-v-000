@@ -88,8 +88,10 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
 
   holiday_hash.collect do | season, holiday |
-      # binding.pry
-      x = holiday.select {|i| holiday.values.flatten.include?("BBQ")}
+      holiday.select do |i|
+        holiday.values.flatten.include?("BBQ")
+        binding.pry
+      end
       return x.keys
     end
 end
