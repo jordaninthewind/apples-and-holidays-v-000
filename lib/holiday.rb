@@ -93,4 +93,5 @@ def all_holidays_with_bbq(holiday_hash)
       return_array << key
     end
   end
+  return_array
 end
